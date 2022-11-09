@@ -443,17 +443,19 @@ h4 {
 }
 
 #cards {
-  gap: 1.5em;
+  gap: 1em;
   text-align: center;
   margin: 2em 0;
+  border: 2px solid red;
+  justify-content: space-between;
+  align-content: stretch
 }
 
 .card {
   height: 100%;
+  width: 32%;
   align-items: center;
-  justify-content: center;
   padding-top: 0.5em;
-  flex: 1;
   border: 0.1em solid gray;
   border-radius: 0.2em;
 }
