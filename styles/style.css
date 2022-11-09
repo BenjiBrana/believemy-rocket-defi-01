@@ -5,6 +5,7 @@
   --couleurNoir: #000;
   --couleurGris: #dedede;
 }
+
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;900&display=swap');
@@ -138,13 +139,23 @@ ul {
   font-size: 1.1em;
 }
 
+#mail a:hover,
+#tel a:hover {
+  color: var(--couleurRed);
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px 0.5px var(--couleurWhite);
+}
+
+
 #logoMail,
 #logoTel {
+  font-size: 1.2em;
   filter: invert(100%);
   -webkit-filter: invert(100%);
   fill: currentColor;
   width: 2em;
 }
+
 
 #logoMail {
   padding-right: 1em;
@@ -157,13 +168,20 @@ ul {
 }
 
 #contactRS {
-  gap: 1em;
+  gap: 2em;
 }
 
 .reseauxSociaux {
   filter: invert(100%);
   -webkit-filter: invert(100%);
   width: 1.8em;
+}
+
+#contactRS li:hover {
+  border: 0.2em solid var(--couleurRed);
+  border-radius: 10em;
+  box-shadow: 0px 0px 5px var(--couleurRed);
+
 }
 
 .white {
@@ -180,8 +198,17 @@ header {
 }
 
 #itemsMenu {
-  color: var(--couleurNoir);
   gap: 0.7em;
+}
+
+#itemsMenu a {
+  color: var(--couleurNoir);
+}
+
+#itemsMenu :hover {
+  color: var(--couleurRed);
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px 0.5px var(--couleurNoir);
 }
 
 /*Main*/
@@ -484,7 +511,8 @@ h4 {
 }
 
 .texteBtnCertificat:hover {
-  color: var(--couleurWhite);
+  color: var(--couleurRed);
+  font-weight: bold;
   background: rgba(0, 0, 0, 0.8);
 }
 
@@ -501,7 +529,7 @@ h4 {
 }
 
 .card p {
-  padding:1em;
+  padding: 1em;
 }
 
 .card h6 {
@@ -525,6 +553,13 @@ h4 {
   margin-bottom: 1em;
   gap: 0.5em;
 }
+
+#cv:hover {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px 0.5px var(--couleurNoir);
+}
+
 
 #logoPDF {
   width: 1em;
@@ -553,7 +588,7 @@ h4 {
   position: relative;
 }
 
-.inverse{
+.inverse {
   order: 2;
 }
 
@@ -564,7 +599,7 @@ h4 {
   box-shadow: 4px 0px 57px 7px rgba(0, 0, 0, 0.24);
   -webkit-box-shadow: 4px 0px 57px 7px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 4px 0px 57px 7px rgba(0, 0, 0, 0.24);
-  
+
 }
 
 .titreImage {
@@ -591,6 +626,7 @@ h4 {
 .projetDescription h5 {
   font-size: 1em;
 }
+
 .projetDescription h6 {
   text-decoration: underline;
 }
@@ -614,7 +650,8 @@ h4 {
 }
 
 .btnProjet:hover {
-  color: var(--couleurWhite);
+  color: var(--couleurRed);
+  font-weight: bold;
   background: rgba(0, 0, 0, 0.8);
 
 }
@@ -628,9 +665,19 @@ footer {
   padding: 2em 5em;
 }
 
+#containerFooter ul li a:hover{
+  text-shadow: 0.5px 0.5px 0.5px var(--couleurWhite);
+}
+
 #containerFooter {
   padding: 1em;
-  line-height:1.5em;
+  line-height: 1.5em;
+}
+
+#mailFooter:hover {
+  color: var(--couleurRed);
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px 0.5px var(--couleurWhite);
 }
 
 #containerFooter ul,
@@ -650,4 +697,3 @@ footer {
 .gold {
   color: gold;
 }
-
