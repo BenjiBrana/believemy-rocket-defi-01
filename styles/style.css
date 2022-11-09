@@ -569,6 +569,8 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
+  font-family: 'Audiowide', display;
+  font-size: 0.8em;
 }
 
 .projetDescription {
@@ -596,6 +598,9 @@ h4 {
   border-radius: 0.2em;
   cursor: pointer;
   width: 5em;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
   align-items: center;
   text-shadow: 0.5px 0.5px 0.5px var(--couleurWhite);
 }
@@ -617,6 +622,7 @@ footer {
 
 #containerFooter {
   padding: 1em;
+  line-height:1.5em;
 }
 
 #containerFooter ul,
