@@ -1,3 +1,10 @@
+:root {
+  --couleurWhite: rgb(255, 255, 255);
+  --couleurBleu: rgb(39, 144, 255);
+  --couleurRed: rgb(207, 12, 12);
+  --couleurNoir: #000;
+  --couleurGris: #dedede;
+}
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;900&display=swap');
@@ -543,8 +550,6 @@ h4 {
   width: 60%;
   border-radius: 0.2em;
   position: relative;
-
-
 }
 
 .inverse{
@@ -552,7 +557,7 @@ h4 {
 }
 
 .projetImage img {
-  width: 45em;
+  width: 100%;
   height: 100%;
   border-radius: 0.2em;
   box-shadow: 4px 0px 57px 7px rgba(0, 0, 0, 0.24);
@@ -562,15 +567,17 @@ h4 {
 }
 
 .titreImage {
-  width: 97%;
+  width: 100%;
+  border-radius: 0 0 2em 2em;
+  text-align: center;
   color: var(--couleurWhite);
   background: rgba(0, 0, 0, 0.8);
   padding: 0.5em;
   position: absolute;
   top: 0;
-  left: 0;
   font-family: 'Audiowide', display;
-  font-size: 0.8em;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 .projetDescription {
@@ -643,11 +650,3 @@ footer {
   color: gold;
 }
 
-
-:root {
-  --couleurWhite: rgb(255, 255, 255);
-  --couleurBleu: rgb(39, 144, 255);
-  --couleurRed: rgb(207, 12, 12);
-  --couleurNoir: #000;
-  --couleurGris: #dedede;
-}
