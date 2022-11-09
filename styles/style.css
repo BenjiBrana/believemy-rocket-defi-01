@@ -453,18 +453,17 @@ h4 {
   gap: 1em;
   text-align: center;
   margin: 2em 0;
-  border: 2px solid red;
   justify-content: space-between;
-  align-content: stretch
+
 }
 
 .card {
-  height: 100%;
   width: 32%;
-  align-items: center;
+  align-items: stretch;
   padding-top: 0.5em;
   border: 0.1em solid gray;
   border-radius: 0.2em;
+  gap: 0.5em;
 }
 
 .btnCertificat {
@@ -502,22 +501,24 @@ h4 {
 }
 
 .card p {
-  padding: 1em;
+  padding:1em;
 }
 
 .card h6 {
   color: var(--couleurBleu);
   font-size: 0.9em;
+  margin-top: 1em;
   text-shadow: 0.2px 0.1px 0.1px var(--couleurNoir);
 }
 
 .poste {
-  margin: 0.5em 0;
+  margin-top: 1em;
   font-weight: bold;
 }
 
 .formation {
   align-items: center;
+  height: 100%;
 }
 
 #cv {
